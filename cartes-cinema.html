@@ -1,18 +1,82 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Un petit projet en CSS afin des mettre en places différentes techniques pour réaliser des cartes" >
-    <title>Les cartes cinéma</title>
-    <link rel="stylesheet" href="style3.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Un petit projet en CSS afin des mettre en places différentes techniques pour réaliser des cartes"
+    />
+    <title>Les cartes Cinéma</title>
+    <link rel="stylesheet" href="style3.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <a href="index.html" class="btnRetour">Accueil</a>
 
-    <h1>Les cartes cinéma</h1>
+    <h1>Les cartes Cinéma</h1>
+    <section>
+      <div class="carteCinema">
+        <div class="logoHand">
+          <img
+            src="ressources/logoParrain.jpg"
+            alt="logo parrain"
+            class="imageLogo"
+          />
+        </div>
 
+        <div class="image"></div>
 
-    </div>
-</body>
+        <div class="contenu">
+          <h2 class="titreFilm">Le Parrain : Partie I</h2>
+
+          <div class="caracts">
+            <p class="info">1972</p>
+            <p class="info">2h58</p>
+            <p class="info">Gangsters</p>
+          </div>
+
+          <div class="classement">
+            <div class="stars">⭐</div>
+            <div class="stars">⭐</div>
+            <div class="stars">⭐</div>
+            <div class="stars">⭐</div>
+            <div class="stars">⭐</div>
+            <div class="stars">⭐</div>
+            <div class="stars">⭐</div>
+            <div class="stars">⭐</div>
+            <div class="stars">⭐</div>
+          </div>
+
+          <div class="synopsis">
+            En 1945, à New York, les Corleone sont une des 5 familles de la
+            mafia. Don Vito Corleone, `parrain' de cette famille, marie sa fille
+            à un bookmaker. Sollozzo, `parrain' de la famille Tattaglia, propose
+            à Don Vito une association dans le trafic de drogue, mais celui-ci
+            refuse. Sonny, un de ses fils, ...
+            <a href="#" class="lienMore">En lire plus</a>
+          </div>
+
+          <div class="regarder">
+            <div class="btn">
+              <span class="icon">
+                <img src="ressources/play.svg" alt="icone play" />
+              </span>
+              Bande-annonce
+            </div>
+            <div class="btn">
+              <span class="icon">
+                <img src="ressources/filmicon.svg" alt="icone film" />
+              </span>
+              Regarder le film
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

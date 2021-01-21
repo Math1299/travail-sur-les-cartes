@@ -29,7 +29,7 @@
   }
 }
 body {
-  background: indianred;
+  background: #eaeaea;
   font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
 }
@@ -38,4 +38,103 @@ h1 {
   font-size: 50px;
   color: #333;
   padding: 50px;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+.carteCinema {
+  width: 800px;
+  height: 400px;
+  flex-shrink: 0;
+  background: #000;
+  display: flex;
+  margin-bottom: 200px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.5);
+}
+.imageLogo {
+  width: 130px;
+  z-index: 1;
+}
+.logoHand {
+  position: absolute;
+  bottom: 50px;
+  right: -15px;
+}
+.image {
+  width: 40%;
+  height: 100%;
+  background: url(ressources/imgMovie.jpg);
+  background-position: 10px 1px;
+}
+.contenu {
+  width: 60%;
+  height: 100%;
+}
+.titreFilm {
+  font-size: 40px;
+  color: #f1f1f1;
+  padding: 20px 20px 0 20px;
+}
+.caracts {
+  color: #f1f1f1;
+  font-size: 20px;
+  display: flex;
+}
+.info {
+  width: 25%;
+  padding: 0px 20px;
+}
+.classement {
+  display: flex;
+  padding: 0 20px;
+}
+.stars {
+  padding-right: 5px;
+}
+.synopsis {
+  width: 80%;
+  padding: 10px 0 0 20px;
+  color: #f1f1f1;
+  font-size: 15px;
+  text-align: justify;
+  position: relative;
+  z-index: 100;
+}
+.lienMore {
+  color: #f1f1f1;
+}
+.regarder {
+  width: 80%;
+  display: flex;
+  color: #f1f1f1;
+  padding: 10px 0 0 15px;
+}
+.btn {
+  width: 180px;
+  height: 40px;
+  border: 2px solid crimson;
+  font-size: 14px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1000;
+  transition: background 1s ease;
+}
+.btn:hover {
+  transition: background 0.2s ease;
+  background: #1a1a1a;
+}
+.icon {
+  width: 20px;
+  margin-right: 5px;
+  margin-top: 5px;
 }
