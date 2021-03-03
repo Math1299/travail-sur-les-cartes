@@ -1,0 +1,413 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.btnRetour {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f1f1f1;
+  background: mediumslateblue;
+  text-decoration: none;
+  font-size: 18px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  box-shadow: 0 0 0 0 mediumslateblue;
+  animation: pulse 1.3s infinite;
+}
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 12px rgba(255, 255, 255, 0.01);
+  }
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #131415;
+  background-image: linear-gradient(
+      12deg,
+      rgba(193, 193, 193, 0.05) 0%,
+      rgba(193, 193, 193, 0.05) 2%,
+      rgba(129, 129, 129, 0.05) 2%,
+      rgba(129, 129, 129, 0.05) 27%,
+      rgba(185, 185, 185, 0.05) 27%,
+      rgba(185, 185, 185, 0.05) 66%,
+      rgba(83, 83, 83, 0.05) 66%,
+      rgba(83, 83, 83, 0.05) 100%
+    ),
+    linear-gradient(
+      321deg,
+      rgba(240, 240, 240, 0.05) 0%,
+      rgba(240, 240, 240, 0.05) 13%,
+      rgba(231, 231, 231, 0.05) 13%,
+      rgba(231, 231, 231, 0.05) 34%,
+      rgba(139, 139, 139, 0.05) 34%,
+      rgba(139, 139, 139, 0.05) 71%,
+      rgba(112, 112, 112, 0.05) 71%,
+      rgba(112, 112, 112, 0.05) 100%
+    ),
+    linear-gradient(
+      236deg,
+      rgba(189, 189, 189, 0.05) 0%,
+      rgba(189, 189, 189, 0.05) 47%,
+      rgba(138, 138, 138, 0.05) 47%,
+      rgba(138, 138, 138, 0.05) 58%,
+      rgba(108, 108, 108, 0.05) 58%,
+      rgba(108, 108, 108, 0.05) 85%,
+      rgba(143, 143, 143, 0.05) 85%,
+      rgba(143, 143, 143, 0.05) 100%
+    ),
+    linear-gradient(
+      96deg,
+      rgba(53, 53, 53, 0.05) 0%,
+      rgba(53, 53, 53, 0.05) 53%,
+      rgba(44, 44, 44, 0.05) 53%,
+      rgba(44, 44, 44, 0.05) 82%,
+      rgba(77, 77, 77, 0.05) 82%,
+      rgba(77, 77, 77, 0.05) 98%,
+      rgba(8, 8, 8, 0.05) 98%,
+      rgba(8, 8, 8, 0.05) 100%
+    ),
+    linear-gradient(334deg, hsl(247, 0%, 2%), hsl(247, 0%, 2%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  flex-wrap: wrap;
+}
+.card {
+  position: relative;
+  z-index: 1;
+  width: 400px;
+  height: 600px;
+  background: #a1a1a1;
+  margin: 40px 40px;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+
+.option {
+  position: absolute;
+  z-index: 10;
+  background: #f1f1f1;
+  top: -10px;
+  left: -60px;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 68% 32% 62% 38% / 27% 60% 40% 73%;
+  color: #131415;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.price {
+  position: relative;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.euro {
+  font-size: 40px;
+}
+.cent::after {
+  content: "€";
+  position: absolute;
+  right: 53%;
+}
+.time {
+  color: #eaeaea;
+  font-size: 20px;
+}
+
+.divider {
+  width: 45%;
+  margin: 0 auto 20px;
+  outline: none;
+  height: 1px;
+  border: none;
+  background: #000;
+}
+.specification-list {
+  list-style-type: none;
+  margin: 50px auto;
+}
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #fff;
+  margin: 0 15px;
+}
+.feature {
+  font-size: 25px;
+  line-height: 2;
+}
+.card1,
+.dot3,
+.opt3 {
+  background-image: linear-gradient(37deg, rgb(32, 218, 233), rgb(40, 21, 236));
+}
+.card2,
+.dot1,
+.opt1 {
+  background-image: linear-gradient(
+    378deg,
+    rgb(185, 223, 103),
+    rgb(253, 39, 50)
+  );
+}
+.card3,
+.dot2,
+.opt2 {
+  background-image: linear-gradient(
+    211deg,
+    rgb(68, 202, 201) 0%,
+    rgb(252, 255, 114) 100%
+  );
+}
+.btn {
+  width: 120px;
+  height: 40px;
+  position: absolute;
+  background: #000;
+  color: #eaeaea;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.5);
+  display: block;
+  transform: rotate(45deg);
+  top: -70px;
+  left: -100px;
+}
+.btn:hover::before {
+  transform: translateX(300px) rotate(45deg);
+  transition: transform 0.5s linear;
+}
+
+.card:hover {
+  filter: blur(0) !important;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #131415;
+  background-image: linear-gradient(
+      12deg,
+      rgba(193, 193, 193, 0.05) 0%,
+      rgba(193, 193, 193, 0.05) 2%,
+      rgba(129, 129, 129, 0.05) 2%,
+      rgba(129, 129, 129, 0.05) 27%,
+      rgba(185, 185, 185, 0.05) 27%,
+      rgba(185, 185, 185, 0.05) 66%,
+      rgba(83, 83, 83, 0.05) 66%,
+      rgba(83, 83, 83, 0.05) 100%
+    ),
+    linear-gradient(
+      321deg,
+      rgba(240, 240, 240, 0.05) 0%,
+      rgba(240, 240, 240, 0.05) 13%,
+      rgba(231, 231, 231, 0.05) 13%,
+      rgba(231, 231, 231, 0.05) 34%,
+      rgba(139, 139, 139, 0.05) 34%,
+      rgba(139, 139, 139, 0.05) 71%,
+      rgba(112, 112, 112, 0.05) 71%,
+      rgba(112, 112, 112, 0.05) 100%
+    ),
+    linear-gradient(
+      236deg,
+      rgba(189, 189, 189, 0.05) 0%,
+      rgba(189, 189, 189, 0.05) 47%,
+      rgba(138, 138, 138, 0.05) 47%,
+      rgba(138, 138, 138, 0.05) 58%,
+      rgba(108, 108, 108, 0.05) 58%,
+      rgba(108, 108, 108, 0.05) 85%,
+      rgba(143, 143, 143, 0.05) 85%,
+      rgba(143, 143, 143, 0.05) 100%
+    ),
+    linear-gradient(
+      96deg,
+      rgba(53, 53, 53, 0.05) 0%,
+      rgba(53, 53, 53, 0.05) 53%,
+      rgba(44, 44, 44, 0.05) 53%,
+      rgba(44, 44, 44, 0.05) 82%,
+      rgba(77, 77, 77, 0.05) 82%,
+      rgba(77, 77, 77, 0.05) 98%,
+      rgba(8, 8, 8, 0.05) 98%,
+      rgba(8, 8, 8, 0.05) 100%
+    ),
+    linear-gradient(334deg, hsl(247, 0%, 2%), hsl(247, 0%, 2%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  flex-wrap: wrap;
+}
+.card {
+  position: relative;
+  z-index: 1;
+  width: 400px;
+  height: 600px;
+  background: #a1a1a1;
+  margin: 40px 40px;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+
+.option {
+  position: absolute;
+  z-index: 10;
+  background: #f1f1f1;
+  top: -10px;
+  left: -60px;
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 68% 32% 62% 38% / 27% 60% 40% 73%;
+  color: #131415;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.price {
+  position: relative;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.euro {
+  font-size: 40px;
+}
+.cent::after {
+  content: "€";
+  position: absolute;
+  right: 53%;
+}
+.time {
+  color: #eaeaea;
+  font-size: 20px;
+}
+
+.divider {
+  width: 45%;
+  margin: 0 auto 20px;
+  outline: none;
+  height: 1px;
+  border: none;
+  background: #000;
+}
+.specification-list {
+  list-style-type: none;
+  margin: 50px auto;
+}
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #fff;
+  margin: 0 15px;
+}
+.feature {
+  font-size: 25px;
+  line-height: 2;
+}
+.card1,
+.dot3,
+.opt3 {
+  background-image: linear-gradient(37deg, rgb(32, 218, 233), rgb(40, 21, 236));
+}
+.card2,
+.dot1,
+.opt1 {
+  background-image: linear-gradient(
+    378deg,
+    rgb(185, 223, 103),
+    rgb(253, 39, 50)
+  );
+}
+.card3,
+.dot2,
+.opt2 {
+  background-image: linear-gradient(
+    211deg,
+    rgb(68, 202, 201) 0%,
+    rgb(252, 255, 114) 100%
+  );
+}
+.btn {
+  width: 120px;
+  height: 40px;
+  position: absolute;
+  background: #000;
+  color: #eaeaea;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.5);
+  display: block;
+  transform: rotate(45deg);
+  top: -70px;
+  left: -100px;
+}
+.btn:hover::before {
+  transform: translateX(300px) rotate(45deg);
+  transition: transform 0.5s linear;
+}
+
+.card:hover {
+  filter: blur(0) !important;
+}
